@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>请输入大楼价格、品质加成、人工费和数量：</h1>
+    <form action="/result" method="post">
+        <label for="dl">大楼价格：</label>
+        <input type="number" id="dl" name="dl" required><br>
+        <label for="pz">品质加成：</label>
+        <input type="number" step="0.01" id="pz" name="pz" required><br>
+        <label for="rg">人工费：</label>
+        <input type="number" id="rg" name="rg" required><br>
+        <label for="sl">数量：</label>
+        <input type="number" id="sl" name="sl" required><br>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
